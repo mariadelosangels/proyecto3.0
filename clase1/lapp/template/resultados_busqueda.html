@@ -1,0 +1,19 @@
+<!-- resultados_busqueda.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Resultados de Búsqueda{% endblock %}
+
+{% block content %}
+    <h2>Resultados de Búsqueda</h2>
+
+    <h3>Perros</h3>
+    {% for perro in perros %}
+        <p>{{ perro.nombre }} - {{ perro.raza }}</p>
+    {% endfor %}
+
+    <h3>Gatos</h3>
+    {% for gato in gatos %}
+        <p>{{ gato.nombre }} - {{ gato.raza }}</p>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,24 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi Sitio{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Sitio</h1>
+        <!-- Otras cosas comunes en el encabezado -->
+    </header>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <!-- Pie de página común -->
+    </footer>
+</body>
+</html>

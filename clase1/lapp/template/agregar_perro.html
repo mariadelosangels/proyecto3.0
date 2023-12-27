@@ -1,0 +1,14 @@
+<!-- agregar_perro.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Agregar Perro{% endblock %}
+
+{% block content %}
+    <h2>Agregar Perro</h2>
+    <form method="post" action="{% url 'agregar_perro' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Agregar Perro</button>
+    </form>
+{% endblock %}
